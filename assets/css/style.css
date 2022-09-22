@@ -4,10 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* _____GENERAL_________ */
+.flex{
+    display: flex;
+}
+
 /* _____HEADER_____________ */
 
 header{
     background-color: orange;
+    position: fixed;
+    width: 100%;
 }
 header section{
     /* background-color: lightcyan; */
@@ -31,4 +38,82 @@ header span{
 }
 .icon i{
     padding: 5px;
+}
+/* __SECTION ROW______-- */
+section .row{
+    background-color: lightcoral;
+    width: 100%;
+}
+/* ______CARD______________________ */
+
+ .row .card{
+    background-color: aquamarine;
+    width: calc(100%/3);
+    margin-top: 116px;
+ }
+ .img{
+    position: relative;
+    z-index: 1;
+ }
+ .img>img{
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+ }
+ img>.text-img{
+    background-color: lightskyblue;
+    
+ }
+
+
+ /* ____INFO CARD_____________ */
+ .text-info{
+    border: 2px solid black;
+    height: 200px;
+ }
+
+.sconto span{
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    width: 77px;
+    height: 45px;
+    margin-top: 772px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sostenibilità span{
+    background-color: green;
+    position: absolute;
+    z-index: 2;
+    width: 145px;
+    height: 45px;
+    margin-top: 772px;
+    margin-left: 88px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heart span{
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    width: 87px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #01131c;
+    font-size: 26px;
+     /* margin-left: 538px;
+    margin-top: 30px; */
+}
+.fa-heart:before {
+    content: "\f004";
+    font-size: 35px;
 }
